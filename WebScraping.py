@@ -13,7 +13,7 @@ while counter < file_max:
         content = data.content.decode("utf-8")
         if len(content) > 0:
             end = data.url.split("/")[-1]
-            with open("wiki/{}.html".format(end), "w+") as f:
+            with open("Data/wiki/{}.html".format(end), "w+") as f:
                 f.write(content)
                 counter += 1
     except Exception as e:
